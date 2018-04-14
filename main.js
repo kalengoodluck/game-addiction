@@ -6,7 +6,7 @@ $(document).ready(function () {
 			cost = parseFloat(this_row.find(".cost").val()),
 			tariff = parseFloat(this_row.data("tariff-percent")),
 			pre_tariff_cost = (cost * quantity),
-			post_tariff_cost = (pre_tariff_cost + (pre_tariff_cost * (tariff / 100)));
+			post_tariff_cost = (pre_tariff_cost + (pre_tariff_cost * tariff/100)));
 
 		// console.log("Quantity", quantity);
 
